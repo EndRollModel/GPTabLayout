@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.github.EndRollModel'
-version = '1.0'
+version = '1.0.0.1'
 
 android {
     compileSdk 30
@@ -53,7 +53,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.EndRollModel'
                 artifactId = 'GPTabLayout'
-                version = '1.0.0'
+                version = '1.0.0.1'
             }
         }
     }
