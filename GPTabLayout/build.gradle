@@ -52,7 +52,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.EndRollModel'
                 artifactId = 'GPTabLayout'
-                version = '0.1.3'
+                version = '1.0'
             }
         }
     }
