@@ -18,13 +18,13 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import java.util.Objects;
 
-public class GpTabLayout extends LinearLayout{
-    private GpTabSelectedListener listener;
+public class GPTabLayout extends LinearLayout{
+    private GPTabSelectedListener listener;
     private int dataType;
     private final static int TC_MODE = 0;
     private final static int VC_MODE = 1;
 
-    public GpTabLayout(@NonNull Context context) {
+    public GPTabLayout(@NonNull Context context) {
         super(context);
         if (this.getRootView() == null) {
             ((ViewGroup) this.getRootView()).setClipChildren(false);
@@ -34,7 +34,7 @@ public class GpTabLayout extends LinearLayout{
         setOrientation(LinearLayout.HORIZONTAL);
     }
 
-    public GpTabLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public GPTabLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         if (this.getRootView() == null) {
             ((ViewGroup) this.getRootView()).setClipChildren(false);
@@ -44,7 +44,7 @@ public class GpTabLayout extends LinearLayout{
         setOrientation(LinearLayout.HORIZONTAL);
     }
 
-    public void setListener(GpTabSelectedListener listener) {
+    public void setListener(GPTabSelectedListener listener) {
         this.listener = listener;
     }
 
@@ -67,7 +67,7 @@ public class GpTabLayout extends LinearLayout{
         }
     }
 
-    public void setData(ViewPager2 vp, GpItemInfo info) {
+    public void setData(ViewPager2 vp, GPItemInfo info) {
         dataType = VC_MODE;
         for (int i = 0; i < Objects.requireNonNull(vp.getAdapter()).getItemCount(); i++) {
             View view = LayoutInflater.from(getContext()).inflate(R.layout.gpitem, null, false);

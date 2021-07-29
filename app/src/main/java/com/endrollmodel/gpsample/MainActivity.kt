@@ -11,13 +11,13 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
-import com.endrollmodel.gptablayout.GpTabLayout
+import com.endrollmodel.gptablayout.GPTabLayout
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val gpTab = findViewById<GpTabLayout>(R.id.gptab)
+        val gpTab = findViewById<GPTabLayout>(R.id.gptab)
         val vp = findViewById<ViewPager2>(R.id.vp2)
         vp.adapter = FragmentAdapter(this)
 

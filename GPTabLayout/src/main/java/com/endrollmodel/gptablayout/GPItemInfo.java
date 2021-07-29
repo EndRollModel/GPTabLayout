@@ -2,6 +2,6 @@ package com.endrollmodel.gptablayout;
 
 import android.widget.TextView;
 
-public interface GpItemInfo {
+public interface GPItemInfo {
     void selectView(int index, TextView view);
 }

@@ -1,5 +1,5 @@
 package com.endrollmodel.gptablayout;
 
-public interface GpTabSelectedListener {
+public interface GPTabSelectedListener {
     void selectedIndex(int index);
 }
