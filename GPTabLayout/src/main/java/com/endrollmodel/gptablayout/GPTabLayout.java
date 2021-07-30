@@ -44,6 +44,26 @@ public class GPTabLayout extends LinearLayout{
         setOrientation(LinearLayout.HORIZONTAL);
     }
 
+    public GPTabLayout(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        if (this.getRootView() == null) {
+            ((ViewGroup) this.getRootView()).setClipChildren(false);
+        }
+        setClipChildren(false);
+        setGravity(Gravity.CENTER);
+        setOrientation(LinearLayout.HORIZONTAL);
+    }
+
+    public GPTabLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+        if (this.getRootView() == null) {
+            ((ViewGroup) this.getRootView()).setClipChildren(false);
+        }
+        setClipChildren(false);
+        setGravity(Gravity.CENTER);
+        setOrientation(LinearLayout.HORIZONTAL);
+    }
+
     public void setListener(GPTabSelectedListener listener) {
         this.listener = listener;
     }
