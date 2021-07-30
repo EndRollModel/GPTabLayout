@@ -4,7 +4,7 @@ Ground pound TabLayout
 
 This sideProject is for fun .
 
-[![sample](https://github.com/EndRollModel/GPTabLayout/tree/master/image/title.png)](https://github.com/EndRollModel/GPTabLayout/tree/master/image/sample.webm)
+[![sample]()](https://user-images.githubusercontent.com/51425629/127620578-b18fe837-2541-4bf5-8d7b-4f36f10d3301.mp4)
 
 
 ### Download
@@ -46,13 +46,13 @@ dependencies {
 ##### java
 ```java
 GPTabLayout gpTab = findViewById(R.id.gpTabLayout);
-ViewPager2 vp = findViewById(R.id.viewpager2);
-gpTab.setData(vp, new GPItemInfo() {
-    @Override
-    public void selectView(int index, TextView textView) {
+        ViewPager2 vp = findViewById(R.id.viewpager2);
+        gpTab.setData(vp, new GPItemInfo() {
+@Override
+public void selectView(int index, TextView textView) {
         textView.setText(String.valueOf(index));
-    }
-});
+        }
+        });
 ```
 ##### kotlin
 ```kotlin‍‍‍‍‍‍
@@ -78,7 +78,7 @@ gpTab.setListener(new GPTabSelectedListener() {
 ```
 ##### kotlin
 ```kotlin
-gpTab.setListener(GPTabSelectedListener { 
+gpTab.setListener(GPTabSelectedListener {
     // here can get click tab index do something
 })
 gpTab.setData("one", "two", "three")
