@@ -46,13 +46,13 @@ dependencies {
 ##### java
 ```java
 GPTabLayout gpTab = findViewById(R.id.gpTabLayout);
-        ViewPager2 vp = findViewById(R.id.viewpager2);
-        gpTab.setData(vp, new GPItemInfo() {
-@Override
-public void selectView(int index, TextView textView) {
+ViewPager2 vp = findViewById(R.id.viewpager2);
+gpTab.setData(vp, new GPItemInfo() {
+    @Override
+    public void selectView(int index, TextView textView) {
         textView.setText(String.valueOf(index));
-        }
-        });
+    }
+});
 ```
 ##### kotlin
 ```kotlin‍‍‍‍‍‍
