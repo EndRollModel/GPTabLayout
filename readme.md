@@ -12,6 +12,7 @@ This sideProject is for fun .
 ### Download
 
 ----
+### 1. 
 
 ##### in build.gradle
 ```
@@ -21,7 +22,8 @@ allprojects {
 	}
 }
 ```
-#### if android studio version is beta or preview
+#### if android studio version is beta or preview ( not have allProjects )
+
 ##### in settings.gradle
 ```
 dependencyResolutionManagement {
@@ -32,7 +34,9 @@ dependencyResolutionManagement {
     }
 }
 ```
-##### last in build.gradle(app)
+### 2.
+
+#####  in build.gradle(app)
 
 ```
 dependencies {
@@ -67,7 +71,8 @@ gpTab.setData(vp) { index, textView ->
 }
 ```
 ------
-#### other
+### or you can set listener get selected index 
+
 ##### java
 ```java
 gpTab.setListener(new GPTabSelectedListener() {
