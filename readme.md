@@ -48,7 +48,7 @@ dependencies {
 
 ---
 
-#### if you use with viewpager2
+#### 1. use with viewpager2
 ##### java
 ```java
 GPTabLayout gpTab = findViewById(R.id.gpTabLayout);
@@ -71,7 +71,7 @@ gpTab.setData(vp) { index, textView ->
 }
 ```
 ------
-### or you can set listener get selected index 
+### 2. get listener 
 
 ##### java
 ```java
