@@ -71,7 +71,7 @@ gpTab.setData(vp) { index, textView ->
 }
 ```
 ------
-### 2. get listener 
+#### 2. get listener 
 
 ##### java
 ```java
