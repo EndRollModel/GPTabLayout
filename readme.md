@@ -1,5 +1,7 @@
 ## GPTabLayout
 
+[![](https://jitpack.io/v/EndRollModel/GPTabLayout.svg)](https://jitpack.io/#EndRollModel/GPTabLayout)
+
 Ground pound TabLayout
 
 This sideProject is for fun .
@@ -10,6 +12,7 @@ This sideProject is for fun .
 ### Download
 
 ----
+### 1. 
 
 ##### in build.gradle
 ```
@@ -19,7 +22,8 @@ allprojects {
 	}
 }
 ```
-#### if android studio version is beta or preview
+#### if android studio version is beta or preview ( not have allProjects )
+
 ##### in settings.gradle
 ```
 dependencyResolutionManagement {
@@ -30,7 +34,9 @@ dependencyResolutionManagement {
     }
 }
 ```
-##### last in build.gradle(app)
+### 2.
+
+#####  in build.gradle(app)
 
 ```
 dependencies {
@@ -42,17 +48,17 @@ dependencies {
 
 ---
 
-#### if you use with viewpager2
+#### 1. use with viewpager2
 ##### java
 ```java
 GPTabLayout gpTab = findViewById(R.id.gpTabLayout);
-        ViewPager2 vp = findViewById(R.id.viewpager2);
-        gpTab.setData(vp, new GPItemInfo() {
-@Override
-public void selectView(int index, TextView textView) {
+ViewPager2 vp = findViewById(R.id.viewpager2);
+gpTab.setData(vp, new GPItemInfo() {
+    @Override
+    public void selectView(int index, TextView textView) {
         textView.setText(String.valueOf(index));
-        }
-        });
+    }
+});
 ```
 ##### kotlin
 ```kotlin‍‍‍‍‍‍
@@ -65,7 +71,8 @@ gpTab.setData(vp) { index, textView ->
 }
 ```
 ------
-#### other
+#### 2. get listener 
+
 ##### java
 ```java
 gpTab.setListener(new GPTabSelectedListener() {
