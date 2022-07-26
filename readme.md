@@ -40,7 +40,7 @@ dependencyResolutionManagement {
 
 ```
 dependencies {
-        implementation 'com.github.EndRollModel:GPTabLayout:0.0.1'
+        implementation 'com.github.EndRollModel:GPTabLayout:0.0.2'
 }
 ```
 
