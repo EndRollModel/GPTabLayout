@@ -48,6 +48,16 @@ dependencies {
 
 ---
 
+add element in layout or you can new GPTabLayout 
+```xml
+    <com.endrollmodel.gptablayout.GPTabLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+```
+
 #### 1. use with viewpager2
 ##### java
 ```java
